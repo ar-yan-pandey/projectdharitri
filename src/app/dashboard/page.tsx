@@ -198,8 +198,9 @@ export default function Dashboard() {
 
       {showAddModal && (
         <AddCowModal
+          isOpen={showAddModal}
           onClose={() => setShowAddModal(false)}
-          onAdd={handleAddCow}
+          onSubmit={handleAddCow}
         />
       )}
     </div>

@@ -95,7 +95,7 @@ export default function ProductSlider() {
                   <p className="text-gray-600 mb-3">{product.description}</p>
                   <p className="text-2xl font-bold text-primary mb-4">{product.price}</p>
                   <Link href="/products" className="btn-primary inline-block w-full text-center">
-                    {translations?.products?.viewDetails || 'View Details'}
+                    {translations?.products?.product?.viewDetails || 'View Details'}
                   </Link>
                 </div>
               </div>

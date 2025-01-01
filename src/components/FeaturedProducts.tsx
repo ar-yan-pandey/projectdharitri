@@ -65,11 +65,11 @@ export default function FeaturedProducts() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold bg-gradient-to-r from-green-600 to-green-400 bg-clip-text text-transparent mb-4">
-            {translations.featuredProducts || 'Featured Products'}
+            {translations.home?.featuredProducts?.title || 'Featured Products'}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-green-600 to-green-400 rounded-full mx-auto mb-4"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {translations.featuredProductsSubtitle || 'Our top-rated products for your cattle'}
+            {translations.home?.featuredProducts?.subtitle || 'Explore our top-rated healthcare products for your cattle'}
           </p>
         </motion.div>
 
@@ -117,7 +117,7 @@ export default function FeaturedProducts() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-green-600 to-green-500 rounded-lg hover:shadow-lg hover:shadow-green-500/25 hover:-translate-y-0.5 transition-all duration-300"
                     >
-                      {translations.buyNow || 'Buy Now'}
+                      {translations.common?.buyNow || 'Buy Now'}
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
@@ -127,7 +127,7 @@ export default function FeaturedProducts() {
                       href="/products"
                       className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-green-600 to-green-500 rounded-lg hover:shadow-lg hover:shadow-green-500/25 hover:-translate-y-0.5 transition-all duration-300"
                     >
-                      {translations.viewDetails || 'View Details'}
+                      {translations.common?.viewMore || 'View Details'}
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
@@ -150,7 +150,7 @@ export default function FeaturedProducts() {
             href="/products"
             className="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-green-600 to-green-500 rounded-xl hover:shadow-xl hover:shadow-green-500/25 hover:-translate-y-1 transition-all duration-300"
           >
-            {translations.viewAllProducts || 'View All Products'}
+            {translations.common?.viewAllProducts || 'View All Products'}
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

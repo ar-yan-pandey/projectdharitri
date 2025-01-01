@@ -50,7 +50,7 @@ export default function NewsSlider() {
     <div className="bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-          {translations.latestNews || 'Latest News'}
+          {translations.common?.latestNews || 'Latest News'}
         </h2>
         <div className="relative">
           <AnimatePresence mode="wait">
@@ -71,7 +71,7 @@ export default function NewsSlider() {
                 href="/news" 
                 className="inline-block mt-4 text-green-600 hover:text-green-800 font-medium"
               >
-                {translations.readMore || 'Read More'} →
+                {translations.common?.readMore || 'Read More'} →
               </Link>
             </motion.div>
           </AnimatePresence>

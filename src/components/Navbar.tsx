@@ -31,13 +31,13 @@ const Navbar = () => {
   }, [pathname]);
 
   const navLinks = [
-    { href: '/', label: translations?.common?.nav?.home || 'Home' },
-    { href: '/about', label: translations?.common?.nav?.about || 'About' },
-    { href: '/products', label: translations?.common?.nav?.products || 'Products' },
-    { href: '/vets', label: translations?.common?.nav?.vets || 'Vets' },
-    { href: '/news', label: translations?.common?.nav?.news || 'News' },
-    { href: '/donate', label: translations?.common?.nav?.donate || 'Donate' },
-    { href: '/dashboard', label: translations?.common?.nav?.dashboard || 'Dashboard' },
+    { href: '/', label: translations?.nav?.home || 'Home' },
+    { href: '/about', label: translations?.nav?.about || 'About' },
+    { href: '/products', label: translations?.nav?.products || 'Products' },
+    { href: '/vets', label: translations?.nav?.vets || 'Vets' },
+    { href: '/news', label: translations?.nav?.news || 'News' },
+    { href: '/donate', label: translations?.nav?.donate || 'Donate' },
+    { href: '/dashboard', label: translations?.nav?.dashboard || 'Dashboard' },
   ];
 
   return (

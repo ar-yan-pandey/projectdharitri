@@ -1,3 +1,19 @@
 {
-  "/page": "app/page.js"
+  "/_not-found": "app/_not-found.js",
+  "/admin/dashboard/page": "app/admin/dashboard/page.js",
+  "/about/page": "app/about/page.js",
+  "/admin/news/page": "app/admin/news/page.js",
+  "/admin/users/page": "app/admin/users/page.js",
+  "/admin/donations/page": "app/admin/donations/page.js",
+  "/admin/products/page": "app/admin/products/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/donate/page": "app/donate/page.js",
+  "/admin/vets/page": "app/admin/vets/page.js",
+  "/auth/page": "app/auth/page.js",
+  "/page": "app/page.js",
+  "/news/page": "app/news/page.js",
+  "/my-cows/page": "app/my-cows/page.js",
+  "/vets/page": "app/vets/page.js",
+  "/products/page": "app/products/page.js",
+  "/api/admin/cows/route": "app/api/admin/cows/route.js"
 }

@@ -192,7 +192,7 @@ const CowList: React.FC<CowListProps> = ({ cows, onCowsUpdate }) => {
             setSelectedCow(null);
           }}
           onSubmit={handleUpdateCow}
-          cow={selectedCow}
+          cowData={selectedCow}
         />
       )}
     </div>

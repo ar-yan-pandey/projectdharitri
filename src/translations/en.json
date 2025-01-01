@@ -5,7 +5,17 @@
     "vets": "Vets",
     "myCows": "My Cows",
     "about": "About",
-    "donate": "Donate"
+    "donate": "Donate",
+    "home": "Home",
+    "dashboard": "Dashboard"
+  },
+  "common": {
+    "buyNow": "Buy Now",
+    "viewMore": "View More",
+    "loading": "Loading...",
+    "viewAllProducts": "View All Products",
+    "latestNews": "Latest News",
+    "readMore": "Read More"
   },
   "footer": {
     "about": {
@@ -61,11 +71,16 @@
       "vets": "Expert Vets",
       "products": "Products",
       "states": "States Covered"
+    },
+    "featuredProducts": {
+      "title": "Featured Products",
+      "subtitle": "Explore our top-rated healthcare products for your cattle"
     }
   },
   "products": {
     "title": "Healthcare Products",
     "subtitle": "Quality products for your cattle's well-being",
+    "featured": "Featured Products",
     "categories": {
       "title": "Categories",
       "all": "All Products",

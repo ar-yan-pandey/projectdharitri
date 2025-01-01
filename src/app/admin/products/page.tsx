@@ -7,6 +7,7 @@ import AdminSidebar from '../../../components/admin/AdminSidebar';
 import { useRouter } from 'next/navigation';
 import { toast } from 'react-hot-toast';
 import { FiEdit2, FiTrash2, FiPlus } from 'react-icons/fi';
+import { Database } from '@/lib/database.types';
 
 type Product = Database['public']['Tables']['products']['Row'];
 

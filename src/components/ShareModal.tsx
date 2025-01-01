@@ -67,7 +67,13 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
           </button>
         </div>
       </div>
-      {showToast && <Toast message="Link copied to clipboard!" />}
+      {showToast && (
+        <Toast
+          message="Link copied to clipboard!"
+          isVisible={showToast}
+          onClose={() => setShowToast(false)}
+        />
+      )}
     </div>
   );
 };

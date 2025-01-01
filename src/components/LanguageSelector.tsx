@@ -9,7 +9,8 @@ const languages = [
   { code: 'hi', name: 'हिंदी' },
   { code: 'mr', name: 'मराठी' },
   { code: 'gu', name: 'ગુજરાતી' },
-  { code: 'pa', name: 'ਪੰਜਾਬੀ' },
+  { code: 'or', name: 'ଓଡ଼ିଆ' },
+  { code: 'bn', name: 'বাংলা' }
 ] as const;
 
 const LanguageSelector = () => {

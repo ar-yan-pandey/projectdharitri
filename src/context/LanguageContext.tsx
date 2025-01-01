@@ -10,6 +10,8 @@ import gu from '../translations/gu.json';
 import or from '../translations/or.json';
 import bn from '../translations/bn.json';
 
+type TranslationType = typeof en;
+
 export const languages = {
   en: { name: 'English', translations: en },
   hi: { name: 'हिंदी', translations: hi },
@@ -17,33 +19,33 @@ export const languages = {
   gu: { name: 'ગુજરાતી', translations: gu },
   or: { name: 'ଓଡ଼ିଆ', translations: or },
   bn: { name: 'বাংলা', translations: bn }
-};
+} as const;
 
 type Language = keyof typeof languages;
 
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
-  translations: any;
+  translations: TranslationType;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>('en');
-  const [translations, setTranslations] = useState(languages.en.translations);
+  const [translations, setTranslations] = useState<TranslationType>(languages.en.translations);
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem('language') as Language;
     if (savedLanguage && languages[savedLanguage]) {
       setLanguage(savedLanguage);
-      setTranslations(languages[savedLanguage].translations);
+      setTranslations(languages[savedLanguage].translations as TranslationType);
     }
   }, []);
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
-    setTranslations(languages[lang].translations);
+    setTranslations(languages[lang].translations as TranslationType);
     localStorage.setItem('language', lang);
   };
 

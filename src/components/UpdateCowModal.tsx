@@ -19,7 +19,7 @@ interface UpdateCowModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSubmit: (cowData: any) => void;
-  cow: Cow | null;
+  cowData: Cow;
 }
 
 type UpdateField = 
@@ -40,7 +40,7 @@ const fieldLabels: Record<UpdateField & string, string> = {
   next_vaccination: 'Next Vaccination Date'
 };
 
-const UpdateCowModal: React.FC<UpdateCowModalProps> = ({ isOpen, onClose, onSubmit, cow }) => {
+const UpdateCowModal: React.FC<UpdateCowModalProps> = ({ isOpen, onClose, onSubmit, cowData }) => {
   const [selectedField, setSelectedField] = useState<UpdateField>(null);
   const [newValue, setNewValue] = useState('');
   const [error, setError] = useState('');
@@ -94,7 +94,7 @@ const UpdateCowModal: React.FC<UpdateCowModalProps> = ({ isOpen, onClose, onSubm
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!selectedField || !cow) return;
+    if (!selectedField || !cowData) return;
 
     if (!validateInput(selectedField, newValue)) {
       return;
@@ -104,7 +104,7 @@ const UpdateCowModal: React.FC<UpdateCowModalProps> = ({ isOpen, onClose, onSubm
 
     // Only pass the id and the field being updated
     const updateData = {
-      id: cow.id,
+      id: cowData.id,
       [selectedField]: newValue.trim()
     };
 
@@ -178,13 +178,13 @@ const UpdateCowModal: React.FC<UpdateCowModalProps> = ({ isOpen, onClose, onSubm
     }
   };
 
-  if (!isOpen || !cow) return null;
+  if (!isOpen || !cowData) return null;
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={onClose}>
       <div className="bg-white rounded-lg p-6 max-w-md w-full" onClick={e => e.stopPropagation()}>
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-xl font-bold text-gray-900">Update {cow.name}</h2>
+          <h2 className="text-xl font-bold text-gray-900">Update {cowData.name}</h2>
           <button
             onClick={onClose}
             className="text-gray-400 hover:text-gray-500"
@@ -202,7 +202,7 @@ const UpdateCowModal: React.FC<UpdateCowModalProps> = ({ isOpen, onClose, onSubm
                   key={field}
                   onClick={() => {
                     setSelectedField(field as UpdateField);
-                    setNewValue(cow[field as keyof Cow]?.toString() || '');
+                    setNewValue(cowData[field as keyof Cow]?.toString() || '');
                     setError('');
                   }}
                   className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"

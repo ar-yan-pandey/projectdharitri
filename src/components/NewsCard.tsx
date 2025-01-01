@@ -24,7 +24,6 @@ export default function NewsCard({ title, category, content, imageUrl, createdAt
           alt={title}
           fill
           className="object-cover"
-          onError={() => setImageError(true)}
         />
       </div>
       <div className="p-6">
