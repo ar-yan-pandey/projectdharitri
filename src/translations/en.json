@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "news": "News",
+    "products": "Products",
+    "vets": "Vets",
+    "myCows": "My Cows",
+    "about": "About",
+    "donate": "Donate"
+  },
+  "footer": {
+    "about": {
+      "title": "About Dharitri",
+      "description": "Providing comprehensive healthcare solutions for cattle and support for farmers across India."
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "products": "Products",
+      "findVets": "Find Vets",
+      "latestNews": "Latest News",
+      "aboutUs": "About Us"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "email": "Email: info@dharitri.com",
+      "phone": "Phone: +91 123 456 7890",
+      "address": "Address: Mumbai, Maharashtra, India"
+    },
+    "followUs": "Follow Us",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "title": "Complete Cow Healthcare Solution",
+      "subtitle": "Empowering farmers with modern healthcare solutions for their cattle",
+      "cta": "Get Started"
+    },
+    "features": {
+      "title": "Why Choose Dharitri",
+      "subtitle": "Comprehensive solutions for your cattle's well-being",
+      "items": [
+        {
+          "title": "Expert Veterinarians",
+          "description": "Connect with experienced vets specializing in cattle care"
+        },
+        {
+          "title": "Quality Products",
+          "description": "Access to verified medicines and healthcare products"
+        },
+        {
+          "title": "24/7 Support",
+          "description": "Round-the-clock assistance for emergencies"
+        },
+        {
+          "title": "Digital Records",
+          "description": "Maintain digital health records for your cattle"
+        }
+      ]
+    },
+    "stats": {
+      "farmers": "Happy Farmers",
+      "vets": "Expert Vets",
+      "products": "Products",
+      "states": "States Covered"
+    }
+  },
+  "products": {
+    "title": "Healthcare Products",
+    "subtitle": "Quality products for your cattle's well-being",
+    "categories": {
+      "title": "Categories",
+      "all": "All Products",
+      "medicines": "Medicines",
+      "supplements": "Supplements",
+      "equipment": "Equipment"
+    },
+    "search": {
+      "placeholder": "Search products..."
+    },
+    "filters": {
+      "sort": "Sort by",
+      "price": "Price",
+      "popularity": "Popularity",
+      "newest": "Newest"
+    },
+    "product": {
+      "addToCart": "Add to Cart",
+      "viewDetails": "View Details",
+      "outOfStock": "Out of Stock"
+    }
+  },
+  "vets": {
+    "title": "Find a Veterinarian",
+    "subtitle": "Connect with experienced veterinarians specializing in cattle care",
+    "search": {
+      "placeholder": "Search by name, location, or specialization...",
+      "allSpecializations": "All Specializations"
+    },
+    "availability": "Availability",
+    "bookAppointment": "Book Appointment",
+    "noResults": "No veterinarians found matching your search criteria.",
+    "filters": {
+      "location": "Location",
+      "specialization": "Specialization",
+      "experience": "Experience",
+      "rating": "Rating"
+    }
+  },
+  "myCows": {
+    "title": "My Cows",
+    "subtitle": "Manage your cattle's health records",
+    "addCow": "Add New Cow",
+    "search": "Search cows...",
+    "filters": {
+      "all": "All Cows",
+      "healthy": "Healthy",
+      "needsAttention": "Needs Attention",
+      "underTreatment": "Under Treatment"
+    },
+    "cowCard": {
+      "id": "ID",
+      "age": "Age",
+      "health": "Health Status",
+      "lastCheckup": "Last Checkup",
+      "viewDetails": "View Details",
+      "addRecord": "Add Health Record"
+    },
+    "noCows": "No cows found. Add your first cow to get started!"
+  },
+  "about": {
+    "title": "About Dharitri",
+    "subtitle": "Revolutionizing cattle healthcare in India",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To provide accessible and quality healthcare solutions for cattle across India, empowering farmers with modern technology and expert support."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become India's leading platform for cattle healthcare, creating a sustainable and healthy ecosystem for livestock farming."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": [
+        {
+          "title": "Quality",
+          "description": "Ensuring the highest standards in healthcare products and services"
+        },
+        {
+          "title": "Accessibility",
+          "description": "Making quality healthcare accessible to every farmer"
+        },
+        {
+          "title": "Innovation",
+          "description": "Leveraging technology to improve cattle healthcare"
+        },
+        {
+          "title": "Trust",
+          "description": "Building lasting relationships with our community"
+        }
+      ]
+    }
+  }
+}
