@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  i18n: {
+    locales: ['en', 'hi', 'mr', 'gu', 'or', 'bn'],
+    defaultLocale: 'en',
+    localeDetection: false, // We'll handle locale detection ourselves
+  },
   images: {
     domains: [
       'agrijunction.s3.ap-south-1.amazonaws.com',

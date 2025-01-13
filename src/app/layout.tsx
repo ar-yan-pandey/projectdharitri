@@ -13,6 +13,22 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Dharitri - Complete Cow Healthcare Solution',
   description: 'Access verified products, expert veterinarians, and essential information for the best care of your cattle.',
+  icons: {
+    icon: [
+      {
+        url: '/logo.png',
+        type: 'image/png',
+      },
+    ],
+    shortcut: ['/logo.png'],
+    apple: [
+      {
+        url: '/logo.png',
+        sizes: '180x180',
+        type: 'image/png',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

@@ -46,7 +46,13 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
     setTranslations(languages[lang].translations as TranslationType);
+    
+    // Set both localStorage and cookie
     localStorage.setItem('language', lang);
+    document.cookie = `NEXT_LOCALE=${lang};path=/;max-age=31536000`; // 1 year expiry
+    
+    // Reload the page to ensure all components get the new language
+    window.location.reload();
   };
 
   return (

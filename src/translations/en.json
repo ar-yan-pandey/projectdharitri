@@ -173,5 +173,11 @@
         }
       ]
     }
+  },
+  "sdg": {
+    "title": "Sustainable Development Goals",
+    "description": "Project Dharitri contributes to the following UN Sustainable Development Goals:",
+    "sdg15Description": "Protecting, restoring and promoting sustainable use of terrestrial ecosystems through our cow protection and care initiatives.",
+    "sdg9Description": "Building resilient infrastructure and fostering innovation through sustainable agricultural practices and modern gaushala management."
   }
 }

@@ -36,6 +36,20 @@ export async function middleware(request: NextRequest) {
 
   const { data: { session } } = await supabase.auth.getSession()
 
+  // Language handling
+  const locale = request.cookies.get('NEXT_LOCALE')?.value || 'en'
+  const pathname = request.nextUrl.pathname
+
+  // Language redirect handling
+  if (
+    !pathname.includes('.') && // exclude files
+    !pathname.startsWith('/api') && // exclude api routes
+    !pathname.startsWith('/_next') // exclude next.js internals
+  ) {
+    // Modify response headers to include language
+    response.headers.set('x-language', locale)
+  }
+
   // Protected routes
   const protectedPaths = ['/dashboard', '/my-cows']
   const adminPaths = ['/admin', '/api/admin'] 

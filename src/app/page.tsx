@@ -9,6 +9,7 @@ import FeaturedProducts from '../components/FeaturedProducts';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import LatestNews from '../components/LatestNews';
+import SDGSection from '../components/SDGSection';
 
 const stats = [
   { id: 1, value: 10000, suffix: '+', key: 'farmers', label: 'Happy Farmers', icon: '👨‍🌾' },
@@ -109,6 +110,9 @@ export default function Home() {
 
       {/* Featured Products Section */}
       <FeaturedProducts />
+
+      {/* SDG Section */}
+      <SDGSection />
 
       {/* Latest News Section */}
       <LatestNews />
